@@ -488,7 +488,9 @@ static struct wlr_xwayland *xwayland;
 #endif
 
 /* configuration, allows nested code to access above variables */
+#include "push.h"
 #include "config.h"
+#include "push.c"
 
 /* attempt to encapsulate suck into one file */
 #include "client.h"
